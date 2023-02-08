@@ -1,0 +1,118 @@
+/* For All Elements */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Welcome Page */
+
+.welcome-section , .signup-section {
+    background-image:linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url(../images/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section .content , .signup-section .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+    padding: 50px 0;
+}
+
+.welcome-section .content .welcome-image img {
+    border-radius: 10px;
+}
+
+
+.welcome-section .content .welcome-text h2 , .signup-section .content .welcome-text h2 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.welcome-section .content .welcome-text p , .signup-section .content .welcome-text p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.welcome-section .content .btn , .signup-section .content .btn {
+    width: 90%;
+    padding: 15px 50px;
+    color: #FFFF;
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    box-shadow: 0px 6px 18px #9CADF2;
+    border-radius: 10px;
+}
+
+/* Signup Section */
+
+.signup-section .content form {
+    width: 100%;
+}
+
+.signup-section .content .form-inputs .input-group-text {
+    background-color: #fff;
+    padding-left: 20px;
+}
+.signup-section .content .form-inputs input {
+    border-left: 0;
+    padding: 20px 0;
+    outline: none;
+}
+
+.signup-section .form-control:focus,
+.signup-section .form-control:active,
+.signup-section .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.signup-section .content .btn {
+    width: 100%;
+}
+
+@media all and (max-width: 1400px) {
+    .welcome-section .content .welcome-text h2 , .signup-section .content .welcome-text h2 {
+        font-size: 38px;
+    }
+
+    .welcome-section .content .welcome-text p , .signup-section .content .welcome-text p {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .welcome-section .content {
+        padding: 100px 0;
+        height: 100%;
+    }
+    .welcome-section .content .welcome-text , .signup-section .content .welcome-text {
+        text-align: center;
+    }
+
+    .welcome-section .content .welcome-text h2 , .signup-section .content .welcome-text h2 {
+        font-size: 42px;
+    }
+
+    .welcome-section .content .welcome-text p , .signup-section .content .welcome-text p {
+        font-size: 16px;
+    }
+    .welcome-section .content .get-started , .signup-section .content .create-account {
+        display: flex;
+        justify-content: center;
+    }
+
+    .signup-section .content {
+        padding: 100px 25px;
+        height: 100%;
+    }
+}
